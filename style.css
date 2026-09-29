@@ -208,8 +208,6 @@ body, html {
 
 .os-window {
     position: absolute;
-    top: 20%;
-    left: 30%;
     width: 400px;
     min-width: 250px; 
     min-height: 200px; 
@@ -304,6 +302,44 @@ body, html {
     display: none; 
 }
 
+.folder-grid {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.folder-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85px;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: #000;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.folder-item span {
+    width: 100%;
+    display: block;
+    word-break: break-word; 
+}
+
+.folder-item img {
+    width: 45px;
+    height: auto;
+    margin-bottom: 5px;
+    transition: transform 0.1s;
+}
+
+.folder-item:hover {
+    background-color: #e0e0e0;
+    border-radius: 4px;
+}
+
 .icon-grid {
     display: flex;
     flex-direction: column; 
@@ -370,23 +406,12 @@ body, html {
     box-sizing: border-box;
 }
 
-.start-btn {
+.creator-text {
     margin-left: 28px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     font-size: 16px;
-    background-color: #d3d2d2;
-    border: 2px outset #fff;
-    border-color: #fff #808080 #808080 #fff;
-    padding: 4px 15px;
-    cursor: pointer;
-    box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-}
-
-.start-btn:active {
-    border: 2px inset #fff;
-    border-color: #808080 #fff #fff #808080;
-    background-color: #d0d0d0;
+    color: #000;
 }
 
 .taskbar-clock {
